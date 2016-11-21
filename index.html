@@ -11,12 +11,18 @@
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+  	<link href="offcanvas.css" rel="stylesheet">
+
 	<style type="text/css">
 
 		#bg{
 			background-color: azure;
 		}
-
+		#myCarousel{
+			margin-bottom: 30px;
+		}
 		.carousel-inner > .item > img,
   		.carousel-inner > .item > a > img {
       		width: 100%;
@@ -49,7 +55,7 @@
 </script>
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body id="bg" data-spy="scroll" data-target=".navbar" data-offset="50">
 
 
 	 
@@ -109,7 +115,7 @@
 	    </a>
 	  </div>
 	
-
+<!-- **************************************************************************************************** -->
 
 	<nav class="navbar navbar-inverse navbar-fixed-top">
 	  <div class="container-fluid">
@@ -139,6 +145,43 @@
 	  </div>
 	</nav>
 
+<!-- **************************************************************************************************** -->
+
+	<div class="container-fluid">
+      <div class="row row-offcanvas row-offcanvas-right">
+
+        <div class="col-xs-12 col-sm-9">
+          <p class="pull-right visible-xs">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+          </p>
+          <div class="jumbotron">
+            <h1>Hello, world!</h1>
+            <p>This is an example to show the potential of an offcanvas layout pattern in Bootstrap. Try some responsive-range viewport sizes to see it in action.</p>
+          </div>
+          
+        </div>
+
+
+        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
+          <div class="list-group">
+            <a href="#" class="list-group-item active">Link</a>
+            <a href="#" class="list-group-item">Link</a>
+            <a href="#" class="list-group-item">Link</a>
+            <a href="#" class="list-group-item">Link</a>
+            <a href="#" class="list-group-item">Link</a>
+            <a href="#" class="list-group-item">Link</a>
+            
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+<!-- **************************************************************************************************** -->
+   
+
+
+
 	<div id="section1" class="container-fluid">
 	  <h1>Section 1</h1>
 	  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
@@ -166,30 +209,9 @@
 	</div>
 
 
-<!--
-	<nav class="navbar navbar-default" data-spy="affix" data-offset-top="197">
-	  <div class="container-fluid">
-	    <div class="navbar-header">
-	      <a class="navbar-brand" href="#">UWI MOBILE</a>
-	    </div>
-	    <ul class="nav navbar-nav">
-	      <li class="active"><a href="#">Home</a></li>
-	      <li><a href="#">Page 1</a></li>
-	      <li><a href="#">Page 2</a></li>
-	      <li><a href="#">Page 3</a></li>
-	    </ul>
-	  	<form class="navbar-form navbar-left">
-      		<div class="form-group">
-        		<input type="text" class="form-control" placeholder="Search">
-      		</div>
-      		<button type="submit" class="btn btn-default">Submit</button>
-    	</form>
-	  </div>
-	</nav>
--->
 
 
-	
+	<script src="offcanvas.js"></script>
 </body>
 
 
