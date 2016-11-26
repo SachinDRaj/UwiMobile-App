@@ -5,9 +5,38 @@
 html,
 body {
   overflow-x: hidden; /* Prevent scroll on narrow devices */
+  position: relative;
 }
 
+#bg{
+      background-color: azure;
+    }
+    #myCarousel{
+      margin-bottom: 30px;
+    }
+    .carousel-inner > .item > img,
+      .carousel-inner > .item > a > img {
+          width: 100%;
+          margin-right: 0px;
+          margin-left: 0px;
+      }
 
+  
+      .affix {
+        top: 0;
+        width: 100%;
+      }
+
+      .affix + .container-fluid {
+          padding-top: 70px;
+      }
+
+
+    #section1 {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}
+    #section2 {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
+    #section3 {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
+    #section4 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
+    #section5 {padding-top:50px;height:500px;color: #fff; background-color: #009688;}
 /*
  * Off Canvas
  * --------------------------------------------------

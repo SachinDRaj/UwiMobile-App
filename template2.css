@@ -1,0 +1,32 @@
+#bg {
+	background-color: azure;
+}
+
+
+.tab{
+		margin-top: 70px;
+		margin-right: 20px;
+		margin-left: 20px
+
+	}
+
+#col1{
+	margin-top: 5px;
+	width: 100%;
+	
+	border-radius: 5px;
+	border-style: solid;
+	border-color: lightgrey;
+	border-width: 1px;
+	background-color: azure;
+}
+#col2{
+	margin-top: 5px;
+	width: 100%;
+	border-style: solid;
+	border-radius: 5px;
+	border-color: lightgrey;
+	border-width: 1px;
+	background-color: azure;
+}
+
