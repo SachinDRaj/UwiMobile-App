@@ -1,3 +1,10 @@
+<?php
+
+
+?>
+
+
+
 <!DOCTYPE html>
 <html>
 
@@ -13,7 +20,7 @@
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 
-  	<link href="index.css" rel="stylesheet">
+  	<link href="css/index.css" rel="stylesheet">
 
 	<style type="text/css">
 	</style>
@@ -131,7 +138,7 @@
         <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
           <div class="list-group">
             <a href="#" class="list-group-item active">Admissions</a>
-            <a href="programmes.html" class="list-group-item">Our Programmes</a>
+            <a href="programmes.php" class="list-group-item">Our Programmes</a>
             <a href="#" class="list-group-item">Student Resources and Financial Aid</a>
             <a href="#" class="list-group-item">Map of UWI</a>
             <a href="#" class="list-group-item">Contact Us</a>
@@ -176,12 +183,11 @@
 
 
 
-	<script src="canvas.js"></script>
+	<script src="js/canvas.js"></script>
 </body>
 
 
 
 </html>
-
 
 

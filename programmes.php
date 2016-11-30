@@ -1,3 +1,7 @@
+<?php
+
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -12,7 +16,7 @@
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-  	<link href="template2.css" rel="stylesheet">
+  	<link href="css/template2.css" rel="stylesheet">
 
 	<style type="text/css">
 	</style>
@@ -38,7 +42,7 @@
       <div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
-            <li><a href="index.html">Home Page</a></li>
+            <li><a href="index.php">Home Page</a></li>
             <li><a href="#section2">News Feed</a></li>
             <li><a href="#section3">How To Apply</a></li>
             <li><a href="#section4">Our Programmes</a></li>
@@ -129,7 +133,7 @@
 
 <!-- **************************************************************************************************** -->
 
-<script src="programmes.js"></script>
+<script src="js/programmes.js"></script>
 </body>
 
 
