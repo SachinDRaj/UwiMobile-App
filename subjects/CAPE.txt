@@ -1,0 +1,39 @@
+Arts and Humanities
+    Art and Design
+    Food and Nutrition
+    French
+    Geography
+    History
+    Law
+    Literatures in English
+    Performing Arts
+    Sociology
+    Spanish
+    Tourism
+Business and Human Development Studies
+    Accounting
+    Caribbean Studies
+    Communication Studies
+    Digital Media
+    Economics
+    Entrepreneurship
+    Financial Services Studies
+    Logistics and Supply Chain Operations
+    Management of Business
+Mathematics and Science
+    Agricultural Science
+    Applied Mathematics
+    Biology
+    Chemistry
+    Computer Science
+    Electrical and Electronic Engineering Technology
+    Environmental Science
+    Green Engineering
+    Information Technology
+    Physics
+    Physical Education and Sport
+    Pure Mathematics
+Technical Studies and Creative arts
+    Building and Mechanical Engineering Drawing
+    Integrated Mathematics
+
