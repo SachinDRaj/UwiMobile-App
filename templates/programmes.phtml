@@ -39,10 +39,9 @@
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
             <li><a href="index.php">Home Page</a></li>
-            <li><a href="#section2">News Feed</a></li>
-            <li><a href="#section3">How To Apply</a></li>
-            <li><a href="#section4">Our Programmes</a></li>
-            <li><a href="#section5">Contact Us</a></li>
+            <li><a href="#">How To Apply</a></li>
+            <li><a href="#">Our Programmes</a></li>
+            <li><a href="#">Contact Us</a></li>
           </ul>
         </div>
       </div>
@@ -52,45 +51,54 @@
 <!-- second Nav bar for search-->
 <div class="tab">
     <ul class="nav nav-tabs" id="myTab">
-        <li class="active"><a href="#sectionA">Search All Degrees</a></li>
-        <li><a href="#sectionB">Search by Grades</a></li>
+        <li class="active"><a href="#sectionA">Search All Programmes</a></li>
+        <li><a href="#sectionB">Search by Subject</a></li>
       
     </ul>
     <div class="tab-content">
 
-        <!-- Search All Degrees-->
+        <!-- Search All Programmes-->
         <div id="sectionA" class="tab-pane fade in active">
 
             <div id="col1" class="container">
-              <h3>Choose Faculty</h3>
+              <h3>Choose a Faculty</h3>
               <ul class="nav nav-pills nav-stacked">
-                <li class="active"><a href="#home" data-toggle="pill">Faculty of Engineering</a></li>
-                <li><a href="#home" data-toggle="pill">Faculty of Food & Agriculture</a></li>
-                <li><a href="#home" data-toggle="pill">Faculty of Humanities & Education</a></li>
-                <li><a href="#home" data-toggle="pill">Faculty of Law</a></li>
-                <li><a href="#home" data-toggle="pill">Faculty of Medical Sciences</a></li>
-                <li><a href="#home" data-toggle="pill" >Faculty of Science & Technology</a></li>
-                <li><a href="#home" data-toggle="pill">Faculty of Social Sciences</a></li>
+                <li class="active"><a href="#prog" data-toggle="pill" onclick="retrieveProgrammes(1)">Faculty of Engineering</a></li>
+                <li><a href="#prog" data-toggle="pill" onclick="retrieveProgrammes(2)">Faculty of Food & Agriculture</a></li>
+                <li><a href="#prog" data-toggle="pill" onclick="retrieveProgrammes(3)">Faculty of Humanities & Education</a></li>
+                <li><a href="#prog" data-toggle="pill" onclick="retrieveProgrammes(4)">Faculty of Law</a></li>
+                <li><a href="#prog" data-toggle="pill" onclick="retrieveProgrammes(5)">Faculty of Medical Sciences</a></li>
+                <li><a href="#prog" data-toggle="pill" onclick="retrieveProgrammes(6)">Faculty of Science & Technology</a></li>
+                <li><a href="#prog" data-toggle="pill" onclick="retrieveProgrammes(7)">Faculty of Social Sciences</a></li>
               </ul>
             </div>
 
             <div id="col2" class="container">
-            <div class="tab-content">
-            <div id="home" class="tab-pane fade in active">
-              <h3>Choose Degree</h3>
-              <ul class="nav nav-pills nav-stacked">
-                <li><a href="#" data-toggle="modal" data-target="#myModal">Option 1</a></li>
-                <li><a href="#" data-toggle="modal" data-target="#myModal">Option 2</a></li>
-                <li><a href="#" data-toggle="modal" data-target="#myModal">Option 2</a></li>
-                <li><a href="#" data-toggle="modal" data-target="#myModal">Option 3</a></li>
-              </ul>
+              <div class="tab-content">
+                <div id="prog" class="tab-pane fade in active">
+                    <h3>Choose a Undergraduate Degree</h3>
+                      <ul id="tab1" class="nav nav-pills nav-stacked">
+                      </ul>
+                </div>
+              </div>
             </div>
-            </div>
+
+            <div id="col2" class="container">
+              <div class="tab-content">
+                <div id="prog1" class="tab-pane fade in active">
+                    <h3>Choose a Programme</h3>
+                      <ul id="tab2" class="nav nav-pills nav-stacked">
+                      </ul>
+                </div>
+              </div>
             </div>
             
+            <div id="hh">
+              <p></p>
+            </div>
         </div>
 
-        <!-- Search by Grades -->
+        <!-- Search by Subject -->
         <div id="sectionB" class="tab-pane fade">
             <h3>Section B</h3>
             <p>Vestibulum nec erat eu nulla rhoncus fringilla ut non neque. Vivamus nibh urna, ornare id gravida ut, mollis a magna. Aliquam porttitor condimentum nisi, eu viverra ipsum porta ut. Nam hendrerit bibendum turpis, sed molestie mi fermentum id. Aenean volutpat velit sem. Sed consequat ante in rutrum convallis. Nunc facilisis leo at faucibus adipiscing.</p>
@@ -107,27 +115,88 @@
 <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog modal-lg">
 
-      <!-- Modal content-->
-      <div class="modal-content">
+    
+      <div id="mod" class="modal-content">
 
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Course Name</h4>
+      <!-- programme name -->
+        <div id="name" class="modal-header">
+          
         </div>
 
-        <div class="modal-body">
-          <p>About Course</p>
+
+        <div id="desc" class="modal-body">
+        
+        </div>
+
+        <hr>
+
+        <div id="time" class="modal-body">
+        
+        </div>
+        
+        <hr>
+
+        <div id="edu1" class="modal-body">
+        
+        </div>
+
+        <hr>
+
+        <div id="edu2" class="modal-body">
+        
+        </div>
+
+        <hr>
+
+        <div id="edu3" class="modal-body">
+        
+        </div>
+
+         <hr>
+        
+        <div id="career" class="modal-body">
+        
+        </div>
+
+         <hr>
+        
+        <div id="job" class="modal-body">
+        
         </div>
 
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
 
+
       </div>
+
+
+
+
     </div>
   </div>
 
 <!-- **************************************************************************************************** -->
+
+<!-- <script id="scroll" type="text/javascript">
+  $("#prog li a[href^='#']").on('click', function(e) {
+
+       // prevent default anchor click behavior
+       e.preventDefault();
+       
+       // animate
+       $('html, body').animate({
+           scrollTop: $(this.hash).offset().top-75
+         }, 300, function(){
+   
+           // when done, add hash to url
+           // (default click behaviour)
+           window.location.hash = this.hash;
+         });
+
+    });
+</script> -->
 
 <script src="js/programmes.js"></script>
 </body>
