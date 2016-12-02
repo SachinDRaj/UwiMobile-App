@@ -98,10 +98,88 @@
             </div>
         </div>
 
-        <!-- Search by Subject -->
+        <!-- Search by Grades -->
         <div id="sectionB" class="tab-pane fade">
-            <h3>Section B</h3>
-            <p>Vestibulum nec erat eu nulla rhoncus fringilla ut non neque. Vivamus nibh urna, ornare id gravida ut, mollis a magna. Aliquam porttitor condimentum nisi, eu viverra ipsum porta ut. Nam hendrerit bibendum turpis, sed molestie mi fermentum id. Aenean volutpat velit sem. Sed consequat ante in rutrum convallis. Nunc facilisis leo at faucibus adipiscing.</p>
+            <h3>Choose Your Lower Education Passes</h3>
+            <ul class="lower_edu_sec nav nav-pills nav-stacked">
+              
+            </ul>
+
+            <div id="lower_edu_choose_sub" class="container collapse">
+                
+              <form style="display:none" id="input_chosen_lvl1">
+
+              </form>
+
+              <div id="display_chosen_lvl1">
+                <div class="form-group">
+
+                </div>
+              </div>
+              <div id="lvl1_add_sub">
+                <input id="subToEnter" type="text" class="form-control" placeholder="Subject">
+                <button onclick="addSublvl1();" type="button" class="btn btn-primary">Add Subject</button>
+              </div>
+              
+            </div>
+            <!-- seperator -->
+            <h3>Choose Your Higher Education Passes</h3>
+            <ul id="insertHere" class="higher_edu_sec nav nav-pills nav-stacked">
+              
+            </ul>
+
+            <div id="higher_edu_choose_sub" class="container collapse">
+                
+              <form style="display:none" id="input_chosen_lvl2">
+
+              </form>
+
+              <div id="display_chosen_lvl2">
+                <div class="form-group">
+
+                </div>
+              </div>
+              <div id="lvl2_add_sub">
+                <input id="subToEnter2" type="text" class="form-control" placeholder="Subject">
+                <button onclick="addSublvl2();" type="button" class="btn btn-primary">Add Subject</button>
+              </div>
+
+              <!-- appears only when submit button is hit -->
+              <div class="tab-content">
+                <div class="tab-pane fade in active">
+                    <h3>Choose a Programme</h3>
+                      <ul id="programmes_inserted" class="nav nav-pills nav-stacked">
+                      </ul>
+                </div>
+              </div>
+              
+            </div>
+
+            <div class="modal-footer">
+                <input onclick="submit();" type="button" value="SUBMIT" class="btn"/>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="modal_notif_invalid" role="dialog">
+              <div class="modal-dialog">
+              
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Incorrect Data Entered</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p>The data entered should only contain alphabetical charaters and must not have a length of 0</p> 
+                    <p>Please Try Again</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
         </div>
 
        
@@ -199,6 +277,7 @@
 </script> -->
 
 <script src="js/programmes.js"></script>
+<script src="js/programmes2.js"></script>
 </body>
 
 

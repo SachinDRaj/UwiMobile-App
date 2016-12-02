@@ -35,10 +35,12 @@ function retrieveData(val){
 	
 }
 
+//gets passed the programme id and opens the modal--
 function retrieveData1(val){
 	$.get(base_url+ "/data2/" +val, processAllData2, "json");
 }
 
+//creates a list of programmes--
 // second list
 function processAllData(records){
     	
@@ -85,15 +87,15 @@ function processAllData2(records){
 	    		estate = "YES";
 
             var htmlStr = "<button type='button' class='close' data-dismiss='modal'>&times;</button><h4 class='modal-title'>"+el.programme_name+"</h4></div>";
-            var htmlStr1 = "<h5>Programme Description</h5><p>"+el.programme_desc+"</p>";
+            var htmlStr1 = "<b><h5>Programme Description</h5></b><p>"+el.programme_desc+"</p>";
             var htmlStr2 = "<b>Full Time: </b>"+fstate+"<b> Part Time: </b>"+pstate+"<b> Evening: </b>"+estate;
 
-            var htmlStr3 = "<h5>Requirements: CSEC</h5><p>"+el.education1+"</p>"; 
-            var htmlStr4 = "<h5>Requirements: CAPE</h5><p>"+el.education2+"</p>"; 
-            var htmlStr5 = "<h5>Other Requirements:</h5><p>"+el.other_requirements+"</p>"; 
+            var htmlStr3 = "<b><h5>Requirements: CSEC</h5></b><p>"+el.education1+"</p>"; 
+            var htmlStr4 = "<b><h5>Requirements: CAPE</h5></b><p>"+el.education2+"</p>"; 
+            var htmlStr5 = "<b><h5>Other Requirements:</h5></b><p>"+el.other_requirements+"</p>"; 
 
-            var htmlStr6 = "<h5>Possible Careers:</h5><p>"+el.careers+"</p>";
-            var htmlStr7 = "<h5>Job Titles:</h5><p>"+el.job_titles+"</p>";
+            var htmlStr6 = "<b><h5>Possible Careers:</h5></b><p>"+el.careers+"</p>";
+            var htmlStr7 = "<b><h5>Job Titles:</h5></b><p>"+el.job_titles+"</p>";
 
             $("#name").append(htmlStr);
             $("#desc").append(htmlStr1);

@@ -51,6 +51,29 @@ $app->get("/api/data2/{id}", function(Request $request, Response $response){
 	return $response;
 });
 
+$app->get("/api/getLowerEduList", function(Request $request, Response $response){
+	$getLowerEduListT = getLowerEduList();
+	
+	$response = $response->withJson($getLowerEduListT);
+	return $response;
+});
+
+$app->get("/api/getHigherEduList", function(Request $request, Response $response){
+	$getHigherEduListT = getHigherEduList();
+	
+	$response = $response->withJson($getHigherEduListT);
+	return $response;
+});
+
+$app->get("/api/filterBySubjects/{loweredu}/{higheredu}", function(Request $request, Response $response){
+	$loweredu = $request->getAttribute('loweredu');
+	$higheredu = $request->getAttribute('higheredu');
+	// Get Record for Specific Country
+	$rec = getProgrammes($loweredu,$higheredu );
+	$response = $response->withJson($rec);
+	return $response;
+});
+
 $app->run();
 
 ?>
