@@ -44,7 +44,7 @@ function addLowerSubject(){
 
 }
 
-function addSublvl1(){modal_notif_invalid
+function addSublvl1(){
 	//takes data from id="subToEnter"
 	sub=$("#subToEnter").val();
 
@@ -69,6 +69,9 @@ function addSublvl1(){modal_notif_invalid
 		html+="  <input  onclick='removeSublvl1("+ count+");' type='button' value='Remove' class='btn pull-right'/>";
 		html+="</div>";
 		$('#display_chosen_lvl1').append(html)
+
+		count++;
+		console.log(count);
 	}
 
 }
