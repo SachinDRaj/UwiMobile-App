@@ -118,6 +118,8 @@ function addSublvl2(){
 		html+="  <input  onclick='removeSublvl2("+ count+");' type='button' value='Remove' class='btn pull-right'/>";
 		html+="</div>";
 		$('#display_chosen_lvl2').append(html)
+
+		count++;
 	}
 
 }

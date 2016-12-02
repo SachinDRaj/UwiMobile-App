@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 02, 2016 at 06:03 AM
+-- Generation Time: Dec 02, 2016 at 03:20 PM
 -- Server version: 10.1.16-MariaDB
 -- PHP Version: 5.6.24
 
@@ -41,7 +41,9 @@ CREATE TABLE `education` (
 
 INSERT INTO `education` (`education_id`, `name`, `education_level_id`) VALUES
 (1, 'CSEC', 1),
-(2, 'CAPE', 2);
+(2, 'CAPE', 2),
+(3, 'GCE', 1),
+(4, 'GCE-A', 2);
 
 -- --------------------------------------------------------
 
@@ -587,7 +589,7 @@ ALTER TABLE `undergraduate`
 -- AUTO_INCREMENT for table `education`
 --
 ALTER TABLE `education`
-  MODIFY `education_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `education_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `education_level`
 --
