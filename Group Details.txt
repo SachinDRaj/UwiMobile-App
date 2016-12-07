@@ -6,3 +6,7 @@ Shanea Lewis	 809000437
 
 Git hub:
 https://github.com/SachinDRaj/UwiMobile-App.git
+
+Heroku:
+https://secure-sea-74065.herokuapp.com 
+// Had some trouble connecting to database on Heroku, however it works fine on xampp
