@@ -3,7 +3,7 @@
 
 function getDBConnection(){
 	try{ 
-		$db = new mysqli("138.197.20.97/phpmyadmin","G2","R8v3Wd0S24ZZ4WtB","uwienrol");
+		$db = new mysqli("138.197.20.97/phpmyadmin","uwienrol","R8v3Wd0S24ZZ4WtB","uwienrol");
 		if ($db == null && $db->connect_errno > 0)return null;
 		return $db;
 	}catch(Exception $e){ } 
