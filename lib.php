@@ -5,8 +5,9 @@ function getDBConnection(){
 	try{ 
 
 		//$db = new mysqli_connect("localhost","root","","uwiregistration");  
+        $db = new mysqli_connect("192.168.56.1","root","","uwiregistration");  
 
-        $db = new mysqli("138.197.20.97","G2","R8v3Wd0S24ZZ4WtB","uwienrol");
+        //$db = new mysqli("138.197.20.97","G2","R8v3Wd0S24ZZ4WtB","uwienrol");
 		if ($db == null && $db->connect_errno > 0)return null;
 		return $db;
 	}catch(Exception $e){ } 
